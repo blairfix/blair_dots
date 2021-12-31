@@ -179,7 +179,7 @@ bar {
 }
 
 # clean function
-bindcode Shift+50 exec /home/blair/bin/clean.sh
+bindsym F12 exec /home/blair/bin/clean.sh
 
 # floating window size max size
 #floating_maximum_size 600 x 1000
@@ -188,10 +188,10 @@ bindcode Shift+50 exec /home/blair/bin/clean.sh
 exec --no-startup-id gnome-settings-daemon
 
 # redshift
-exec --no-startup-id redshift
+exec --no-startup-id redshift -O 3000K -r -P
 
 # albert
-exec --no-startup-id albert
+#exec --no-startup-id albert
 
 # set wallpaper
 exec --no-startup-id feh --bg-fill /usr/share/backgrounds/linuxmint/sele_ring.jpg
