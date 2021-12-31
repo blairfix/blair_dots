@@ -205,3 +205,5 @@ bindsym $mod+x exec firefox
 # enable touchpad tap
 exec xinput set-prop 14 "libinput Tapping Enabled" 1
 
+# compton
+exec --no-startup-id compton
