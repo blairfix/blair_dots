@@ -188,7 +188,7 @@ bindsym F12 exec /home/blair/bin/clean.sh
 exec --no-startup-id gnome-settings-daemon
 
 # redshift
-exec --no-startup-id redshift -O 3000K -r -P
+exec --no-startup-id redshift -O 4000K -r -P
 
 # albert
 #exec --no-startup-id albert
@@ -201,3 +201,7 @@ bindsym --release Print exec "scrot ~/Downloads/Screenshot%Y-%m-%d%H:%M:%S.png"
 
 # start firefox
 bindsym $mod+x exec firefox
+
+# enable touchpad tap
+exec xinput set-prop 14 "libinput Tapping Enabled" 1
+
