@@ -10,7 +10,7 @@ font pango:DejaVu Sans Mono 10
 default_border pixel 3
 
 # screen lock
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # network manager
 exec --no-startup-id nm-applet
@@ -194,7 +194,7 @@ exec --no-startup-id redshift -O 4000K -r -P
 #exec --no-startup-id albert
 
 # set wallpaper
-exec --no-startup-id feh --bg-fill /usr/share/backgrounds/linuxmint/sele_ring.jpg
+exec --no-startup-id feh --bg-fill /home/blair/Dropbox/backgrounds/milky-way-g73224e2c3_1920.jpg
 
 # screenshot
 bindsym --release Print exec "scrot ~/Downloads/Screenshot%Y-%m-%d%H:%M:%S.png"

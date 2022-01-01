@@ -121,3 +121,7 @@ fi
 
 # cat to clipboard
 alias "cs=xclip -selection clipboard"
+
+# add dropbox/bin to path
+export PATH=/home/blair/Dropbox/bin:$PATH
+
