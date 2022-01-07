@@ -179,7 +179,7 @@ bar {
 }
 
 # clean function
-bindsym F12 exec /home/blair/bin/clean.sh
+bindsym $mod+p exec /home/blair/Dropbox/bin/clean.sh
 
 # floating window size max size
 #floating_maximum_size 600 x 1000
