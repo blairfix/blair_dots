@@ -1,7 +1,7 @@
 "" general
 set number
 set linebreak		    " break lines at word (requires wrap lines)
-set textwidth=100	    " line wrap (number of cols)
+"set textwidth=50	    " line wrap (number of cols)
 set showmatch		    " highlight matching brace
 set cursorline		    " highlight current line 
 set hlsearch		    " highlight all search results
@@ -19,9 +19,20 @@ set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
 set linespace=2		    " linespace
 
-inoremap df  <ESC>
+" remap escape key
+inoremap df  <ESC>	    
 
 " set font
 set guifont=Liberation\ Mono\ 14
 
+" highlight scheme
 colorscheme xcode 
+
+" autosave buffer every 2 seconds
+let timer = timer_start(2000, 'SaveFile',{'repeat':-1})
+func! SaveFile(timer)
+  silent! :w!
+endfunc
+
+" display last line of buffer
+set display+=lastline
