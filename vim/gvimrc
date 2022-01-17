@@ -1,8 +1,9 @@
 "" general
+set number
 set linebreak		    " break lines at word (requires wrap lines)
 set textwidth=100	    " line wrap (number of cols)
 set showmatch		    " highlight matching brace
-"set cursorline		    " highlight current line 
+set cursorline		    " highlight current line 
 set hlsearch		    " highlight all search results
 set smartcase		    " enable smart-case search
 set ignorecase		    " always case-insensitive
@@ -16,7 +17,11 @@ set ruler		    " show row and column ruler information
 set undolevels=1000	    " number of undo levels
 set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
-
+set linespace=2		    " linespace
 
 inoremap df  <ESC>
 
+" set font
+set guifont=Liberation\ Mono\ 14
+
+colorscheme xcode 
