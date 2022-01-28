@@ -2,7 +2,6 @@
 set linebreak		    " break lines at word (requires wrap lines)
 set textwidth=1000	    " line wrap (number of cols)
 set showmatch		    " highlight matching brace
-"set cursorline		    " highlight current line 
 set hlsearch		    " highlight all search results
 set smartcase		    " enable smart-case search
 set ignorecase		    " always case-insensitive
@@ -16,7 +15,10 @@ set ruler		    " show row and column ruler information
 set undolevels=1000	    " number of undo levels
 set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
+set number
 
+highlight LineNr ctermfg=grey ctermbg=black
 
-inoremap df  <ESC>
-
+" remap df to esc and save file (if in insert mode), or save if in normal mode 
+inoremap df  <ESC>:w<CR>	   
+nnoremap df  :w<CR>

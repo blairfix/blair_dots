@@ -30,7 +30,7 @@ bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec mate-terminal
+bindsym $mod+t exec terminator
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -188,7 +188,7 @@ bindsym $mod+p exec /home/blair/Dropbox/bin/clean.sh
 exec --no-startup-id gnome-settings-daemon
 
 # redshift
-exec --no-startup-id redshift -O 4000K -r -P
+exec --no-startup-id redshift -O 4000K -r 
 
 # albert
 #exec --no-startup-id albert
