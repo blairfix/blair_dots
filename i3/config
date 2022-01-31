@@ -30,7 +30,7 @@ bindsym XF86MonBrightnessDown exec light -U 1 # decrease screen brightness
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+t exec terminator
+bindsym $mod+t exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill

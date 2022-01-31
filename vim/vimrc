@@ -22,3 +22,4 @@ highlight LineNr ctermfg=grey ctermbg=black
 " remap df to esc and save file (if in insert mode), or save if in normal mode 
 inoremap df  <ESC>:w<CR>	   
 nnoremap df  :w<CR>
+

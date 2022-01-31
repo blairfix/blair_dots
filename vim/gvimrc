@@ -20,9 +20,13 @@ set linespace=2		    " linespace
 set display+=lastline	    " display last line of buffer
 set guifont=Liberation\ Mono\ 14 " set gui font
 colorscheme xcode	    " set highlight scheme 
-
+set guicursor+=a:blinkon0   " turn off curser blinking
+set guioptions-=m	    " remove menu bar
+set guioptions-=T	    " remove toolbar
+set guioptions-=r	    " remove right scrollbar
 
 " remap df to esc and save file (if in insert mode), or save if in normal mode 
 inoremap df  <ESC>:w<CR>	   
 nnoremap df  :w<CR>	   
+
 
