@@ -129,4 +129,7 @@ export PATH=/home/blair/.local/bin:$PATH
 
 
 # colors
-export CLICOLOR=1
+eval $(dircolors /home/blair/Dropbox/cloud_work/github/blair_dots/bash/dircolors.txt)
+
+
+
