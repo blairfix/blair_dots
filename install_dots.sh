@@ -21,5 +21,5 @@ do
     cd $h
 done
 
-trash tmp
+rm tmp
 
