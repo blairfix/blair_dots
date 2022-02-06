@@ -12,21 +12,21 @@ set shiftwidth=4	    " number of auto-indent spaces
 set smartindent		    " enable smart-indent
 set smarttab		    " enable smart-tabs
 set softtabstop=4	    " number of spaces per tab
-"set ruler		    " show row and column ruler information
 set undolevels=1000	    " number of undo levels
 set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
 set linespace=2		    " linespace
 set display+=lastline	    " display last line of buffer
-set guifont=Liberation\ Mono\ 14 " set gui font
-colorscheme xcode	    " set highlight scheme 
 set guicursor+=a:blinkon0   " turn off curser blinking
 set guioptions-=m	    " remove menu bar
 set guioptions-=T	    " remove toolbar
 set guioptions-=r	    " remove right scrollbar
+set nohlsearch		    " no search highlighting
 
-" remap df to esc and save file (if in insert mode), or save if in normal mode 
+" remap df to esc and save file (if in insert mode), 
+" or save if in normal mode 
 inoremap df  <ESC>:w<CR>	   
 nnoremap df  :w<CR>	   
 
+colorscheme xcode	    " set highlight scheme 
 
