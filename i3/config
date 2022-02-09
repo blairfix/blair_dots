@@ -36,7 +36,7 @@ bindsym $mod+t exec alacritty
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym Mod4+d exec dmenu_run
+bindsym shift+space exec dmenu_run
 
 # change focus
 bindsym $mod+j focus left

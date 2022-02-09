@@ -203,3 +203,8 @@ EXEC 01;32
 # data files
 .csv 00;36
 .tsv 00;36
+# documents
+.pdf 00;33
+.docx 00;34
+.doc 00;34
+.odt 00;34
