@@ -25,7 +25,7 @@ R.version.string <- R.version$version.string
 
 options(keep.source = interactive())
 options(warn = 0)
-# options(repos = c(CRAN="@CRAN@"))
+options(repos = c(CRAN="https://archive.linux.duke.edu/cran/"))
 # options(BIOC = "http://www.bioconductor.org")
 
 options(timeout = 60)

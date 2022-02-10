@@ -8,6 +8,7 @@ read pw
 sed  "s|password|$pw|g" ssmtp.conf > ssmtp.tmp
 
 # install config file
+sudo mkdir /etc/ssmtp
 sudo cp ssmtp.tmp /etc/ssmtp/ssmtp.conf
 sudo chown root /etc/ssmtp/ssmtp.conf
 trash ssmtp.tmp

@@ -1,6 +1,6 @@
 #!/bin/bash
 
 # make config directory
-mkdir ~/.config/nvim
+mkdir -p ~/.config/nvim
 
 cp init.vim ~/.config/nvim/
