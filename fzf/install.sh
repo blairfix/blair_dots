@@ -4,7 +4,7 @@ dir=$(pwd)
 
 # make directories
 cd ~
-mkdir -p ./fzf/shell
+mkdir -p .fzf/shell
 
 # copy files
 cd $dir
