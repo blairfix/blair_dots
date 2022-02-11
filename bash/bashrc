@@ -68,7 +68,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-. /usr/share/autojump/autojump.sh
+
 
 # fzf fuzzy finder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
@@ -78,6 +78,10 @@ alias "cs=xclip -selection clipboard"
 
 # use radian for R
 alias "R=radian"
+
+# set directory for R packages
+export R_LIBS_USER='/home/blair/R'
+
 
 # add dropbox/bin to path
 export PATH=/home/blair/Dropbox/bin:$PATH
