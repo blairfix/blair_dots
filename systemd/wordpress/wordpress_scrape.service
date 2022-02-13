@@ -1,0 +1,13 @@
+[Unit]
+Description= Email wordpress views
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Projects/scrape_wordpress/RUNALL.sh
+
+[Install]
+WantedBy=default.target
+
+
+
+

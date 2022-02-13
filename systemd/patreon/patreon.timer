@@ -1,0 +1,11 @@
+[Unit]
+Description= Monthly email of patreon analysis
+
+[Timer]
+OnCalendar=*-*-03 05:30:00
+AccuracySec=1min
+Persistent=true
+Unit=patreon.service
+
+[Install]
+WantedBy=timers.target

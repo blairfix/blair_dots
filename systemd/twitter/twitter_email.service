@@ -1,0 +1,13 @@
+[Unit]
+Description= Email twitter trends
+
+[Service]
+Type=simple
+ExecStart= /home/blair/Projects/scrape_twitter/email/send_analysis.sh
+
+[Install]
+WantedBy=default.target
+
+
+
+

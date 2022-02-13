@@ -1,0 +1,9 @@
+[Unit]
+Description= Backup media library
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/media_backup
+
+[Install]
+WantedBy=default.target

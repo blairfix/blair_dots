@@ -1,0 +1,9 @@
+[Unit]
+Description= sync to dropbox
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Dropbox/bin/dropsync
+
+[Install]
+WantedBy=default.target

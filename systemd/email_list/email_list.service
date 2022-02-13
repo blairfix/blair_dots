@@ -1,0 +1,13 @@
+[Unit]
+Description= Daily download of wordpress email subscribers
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Dropbox/cloud_work/blog/pages/utilities/email_list/update_send_list.sh
+
+[Install]
+WantedBy=default.target
+
+
+
+

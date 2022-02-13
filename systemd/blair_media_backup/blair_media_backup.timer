@@ -1,0 +1,11 @@
+[Unit]
+Description= Daily backup of Blair's media archive
+
+[Timer]
+OnCalendar=daily
+AccuracySec=12h
+Persistent=true
+Unit=blair_media_backup.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,11 @@
+[Unit]
+Description= Daily backup to dropbox
+
+[Timer]
+OnCalendar=daily
+AccuracySec=6h
+Persistent=true
+Unit=rclone.service
+
+[Install]
+WantedBy=timers.target

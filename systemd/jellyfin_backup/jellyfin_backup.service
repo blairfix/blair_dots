@@ -1,0 +1,9 @@
+[Unit]
+Description= Backup jellyfin metadata
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/jellyfin_backup
+
+[Install]
+WantedBy=default.target

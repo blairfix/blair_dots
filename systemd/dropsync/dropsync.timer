@@ -1,0 +1,11 @@
+[Unit]
+Description= sync to dropbox
+
+[Timer]
+OnCalendar=daily
+AccuracySec=2h
+Persistent=true
+Unit=dropsync.service
+
+[Install]
+WantedBy=timers.target

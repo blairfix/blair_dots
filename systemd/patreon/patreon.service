@@ -1,0 +1,13 @@
+[Unit]
+Description= email patreon analysis
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Projects/patreon_income/RUNALL.sh
+
+[Install]
+WantedBy=default.target
+
+
+
+

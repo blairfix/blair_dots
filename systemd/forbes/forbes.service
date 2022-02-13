@@ -1,0 +1,13 @@
+[Unit]
+Description= Daily scrape forbes billionaires
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Dropbox/cloud_work/empirical_research/scrape_forbes/run.sh
+
+[Install]
+WantedBy=default.target
+
+
+
+

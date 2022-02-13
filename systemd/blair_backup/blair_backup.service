@@ -1,0 +1,9 @@
+[Unit]
+Description= Backup Blair's files
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/blair_backup
+
+[Install]
+WantedBy=default.target

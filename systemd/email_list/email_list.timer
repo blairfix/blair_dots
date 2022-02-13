@@ -1,0 +1,11 @@
+[Unit]
+Description= Daily scrape of wordpress followers
+
+[Timer]
+OnCalendar=Daily 05:15:00
+AccuracySec=1min
+Persistent=true
+Unit=email_list.service
+
+[Install]
+WantedBy=timers.target

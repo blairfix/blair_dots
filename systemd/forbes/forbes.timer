@@ -1,0 +1,11 @@
+[Unit]
+Description= Daily scrape of forbes billionaires
+
+[Timer]
+OnCalendar=Daily 17:45:00
+AccuracySec=1min
+Persistent=true
+Unit=forbes.service
+
+[Install]
+WantedBy=timers.target
