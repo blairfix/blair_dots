@@ -1,13 +1,12 @@
 # Config file for sSMTP sendmail
 
-TLS_CA_FILE=/etc/pki/tls/certs/ca-bundle.crt
+# hostname
+hostname=blair-Latitude-E6540
 
 UseSTARTTLS=YES
-UseTLS=Yes
 root=blairfix@gmail.com
 mailhub=smtp.gmail.com:587
 AuthUser=blairfix@gmail.com
-AuthPass=password
+AuthPass=ls
 AuthMethod=LOGIN
 FromLineOverride=yes
-hostname=comp_name
