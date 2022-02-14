@@ -207,3 +207,6 @@ exec xinput set-prop 14 "libinput Tapping Enabled" 1
 
 # compton
 exec --no-startup-id compton
+
+# picom
+#exec --no-start-id picom --config /home/blair/.config/compton.conf -b 
