@@ -1,9 +1,0 @@
-[Unit]
-Description= Backup Blair's media library
-
-[Service]
-Type=simple
-ExecStart=/home/blair/cronjobs/blair_media_archive_backup
-
-[Install]
-WantedBy=default.target

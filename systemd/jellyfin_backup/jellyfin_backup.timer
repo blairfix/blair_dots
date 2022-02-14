@@ -3,7 +3,7 @@ Description= Daily backup of jellyfin metadata
 
 [Timer]
 OnCalendar=daily
-AccuracySec=2h
+AccuracySec=6h
 Persistent=true
 Unit=jellyfin_backup.service
 

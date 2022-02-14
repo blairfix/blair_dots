@@ -1,0 +1,9 @@
+[Unit]
+Description= restart jellyfin server
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/jellyfin_restart
+
+[Install]
+WantedBy=default.target

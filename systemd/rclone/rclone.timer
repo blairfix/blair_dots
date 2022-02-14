@@ -1,5 +1,5 @@
 [Unit]
-Description= Daily backup to dropbox
+Description= Daily backup to dropbox using rclone
 
 [Timer]
 OnCalendar=daily

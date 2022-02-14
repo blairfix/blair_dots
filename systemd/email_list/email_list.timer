@@ -1,9 +1,9 @@
 [Unit]
-Description= Daily scrape of wordpress followers
+Description= Daily scrape of wordpress email subscribers
 
 [Timer]
-OnCalendar=Daily 05:15:00
-AccuracySec=1min
+OnCalendar=*-*-* 05:00:00
+AccuracySec=3hour
 Persistent=true
 Unit=email_list.service
 

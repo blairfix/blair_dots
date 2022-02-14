@@ -1,9 +1,9 @@
 [Unit]
-Description= Daily backup of media librar
+Description= Daily backup of media library
 
 [Timer]
 OnCalendar=daily
-AccuracySec=2h
+AccuracySec=6h
 Persistent=true
 Unit=media_backup.service
 
