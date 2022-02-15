@@ -2,7 +2,8 @@
 Description= restart jellyfin server
 
 [Timer]
-OnCalendar=daily
+OnCalendar=*-*-* 10:00:00
+RandomizedDelaySec=600
 AccuracySec=12h
 Persistent=true
 Unit=jellyfin_restart.service

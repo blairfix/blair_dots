@@ -1,10 +1,11 @@
 [Unit]
-Description= Monthly email of wordpress analysis
+Description= Monthly email of wordpress page vies 
 
 [Timer]
 OnCalendar=*-*-02 05:30:00
-AccuracySec=1min
+AccuracySec=10min
 Persistent=true
+RandomizedDelaySec=400
 Unit=wordpress_scrape.service
 
 [Install]

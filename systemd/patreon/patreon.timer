@@ -4,6 +4,7 @@ Description= Monthly email of patreon analysis
 [Timer]
 OnCalendar=*-*-03 05:30:00
 AccuracySec=1min
+RandomizedDelaySec=400
 Persistent=true
 Unit=patreon.service
 

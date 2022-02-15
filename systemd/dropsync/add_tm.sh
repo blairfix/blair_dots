@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cp *.timer *.service /etc/systemd/system
+mkdir -p ~/.config/systemd/user/
+cp *.timer *.service ~/.config/systemd/user/
 
-systemctl daemon-reload
-systemctl enable dropsync.timer
-systemctl start dropsync.timer
-
-systemctl restart dropsync.timer
+systemctl --user daemon-reload
+systemctl --user enable dropsync.timer
+systemctl --user start dropsync.timer
+systemctl --user restart dropsync.timer

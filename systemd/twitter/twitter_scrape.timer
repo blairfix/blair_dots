@@ -2,8 +2,9 @@
 Description= Daily scrape twitter followers
 
 [Timer]
-OnCalendar=daily 05:00:00
-AccuracySec=1min
+OnCalendar=*-*-* 05:00:00
+RandomizedDelaySec=400
+AccuracySec=10min
 Persistent=true
 Unit=twitter_scrape.service
 

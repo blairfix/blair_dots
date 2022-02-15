@@ -1,8 +1,10 @@
 #!/bin/bash
 
-cp *.timer *.service /etc/systemd/system
+mkdir -p ~/.config/systemd/user/
+cp *.timer *.service ~/.config/systemd/user/
 
-systemctl daemon-reload
-systemctl enable email_list.timer
-systemctl start email_list.timer
-systemctl restart email_list.timer
+
+systemctl --user daemon-reload
+systemctl --user enable email_list.timer
+systemctl --user start email_list.timer
+systemctl --user restart email_list.timer

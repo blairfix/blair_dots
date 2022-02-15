@@ -3,6 +3,7 @@ Description= Monthly email of twitter analysis
 
 [Timer]
 OnCalendar=*-*-01 05:30:00
+RandomizedDelaySec=400
 AccuracySec=1min
 Persistent=true
 Unit=twitter_email.service

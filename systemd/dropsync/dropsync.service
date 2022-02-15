@@ -6,4 +6,4 @@ Type=simple
 ExecStart=/home/blair/Dropbox/bin/dropsync
 
 [Install]
-WantedBy=default.target
+WantedBy=timers.target

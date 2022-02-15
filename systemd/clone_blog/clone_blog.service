@@ -1,0 +1,10 @@
+[Unit]
+Description= sync blog content to dropbox linked directory
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Dropbox/cloud_work/patreon/rsync_blog/blog_clone.sh
+
+
+[Install]
+WantedBy=timers.target

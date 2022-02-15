@@ -2,7 +2,8 @@
 Description= Daily backup of media library
 
 [Timer]
-OnCalendar=daily
+OnCalendar=*-*-* 22:00:00
+RandomizedDelaySec=600
 AccuracySec=6h
 Persistent=true
 Unit=media_backup.service

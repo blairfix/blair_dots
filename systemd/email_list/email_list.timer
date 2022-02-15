@@ -2,8 +2,9 @@
 Description= Daily scrape of wordpress email subscribers
 
 [Timer]
-OnCalendar=*-*-* 05:00:00
+OnCalendar=*-*-* 23:00:00
 AccuracySec=3hour
+RandomizedDelaySec=600
 Persistent=true
 Unit=email_list.service
 

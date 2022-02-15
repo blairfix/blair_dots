@@ -2,8 +2,8 @@
 Description= Daily scrape of forbes billionaires
 
 [Timer]
-OnCalendar=Daily 17:45:00
-AccuracySec=1min
+OnCalendar=*-*-* 17:50:00
+AccuracySec=1sec
 Persistent=true
 Unit=forbes.service
 
