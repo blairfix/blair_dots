@@ -1,9 +1,9 @@
-"" general
+" general
+set nonumber		    " no line numbering
 syntax on		    " syntax highlighting
 set linebreak		    " break lines at word (requires wrap lines)
 set textwidth=1000	    " line wrap (number of cols)
 set showmatch		    " highlight matching brace
-"set cursorline		    " highlight current line 
 set smartcase		    " enable smart-case search
 set ignorecase		    " always case-insensitive
 set incsearch		    " searches for strings incrementally
@@ -15,7 +15,7 @@ set softtabstop=4	    " number of spaces per tab
 set undolevels=1000	    " number of undo levels
 set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
-set linespace=2		    " linespace
+set linespace=4		    " linespace
 set display+=lastline	    " display last line of buffer
 set guicursor+=a:blinkon0   " turn off curser blinking
 set guioptions-=m	    " remove menu bar
