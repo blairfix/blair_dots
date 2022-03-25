@@ -22,6 +22,7 @@ set guioptions-=m	    " remove menu bar
 set guioptions-=T	    " remove toolbar
 set guioptions-=r	    " remove right scrollbar
 set nohlsearch		    " no search highlighting
+set spell		    " spell check
 
 " remap df to esc and save file (if in insert mode), 
 " or save if in normal mode 
