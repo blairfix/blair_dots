@@ -94,4 +94,6 @@ EDITOR=/usr/bin/vim
 eval $(env TERM=xterm256-color dircolors /home/blair/Dropbox/cloud_work/github/blair_dots/bash/dircolors.txt)
 
 
+# add latex update path
+export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
 

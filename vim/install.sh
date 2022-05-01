@@ -12,7 +12,7 @@ cd
 
 if [ $HOSTNAME == 'blair-All-Series' ]
 then
-    echo "set guifont=Liberation\ Mono\ 14"  >> .gvimrc
+    echo "set guifont=Liberation\ Mono\ 13.5"  >> .gvimrc
 else
     echo "set guifont=Liberation\ Mono\ 15"  >> .gvimrc
 fi
