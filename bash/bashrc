@@ -95,5 +95,5 @@ eval $(env TERM=xterm256-color dircolors /home/blair/Dropbox/cloud_work/github/b
 
 
 # add latex update path
-export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
+#export PATH=/usr/local/texlive/2022/bin/x86_64-linux:$PATH
 
