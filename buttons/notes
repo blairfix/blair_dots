@@ -1,0 +1,30 @@
+https://unix.stackexchange.com/questions/322814/xf86monbrightnessup-xf86monbrightnessdown-special-keys-not-working
+
+
+Actions
+
+/etc/acpi/actions/bl-down.sh
+
+#!/bin/sh
+
+bl_device=/sys/class/backlight/acpi_video0/brightness
+echo $(($(cat $bl_device)-1)) | sudo tee $bl_device
+
+/etc/acpi/actions/bl-up.sh
+
+#!/bin/sh
+
+bl_device=/sys/class/backlight/acpi_video0/brightness
+echo $(($(cat $bl_device)+1)) | sudo tee $bl_device
+
+Events
+
+/etc/acpi/events/bl-down
+
+event=video/brightnessdown BRTDN 00000087 00000000
+action=/etc/acpi/actions/bl-down.sh
+
+/etc/acpi/events/bl-up
+
+event=video/brightnessup BRTUP 00000086 00000000
+action=/etc/acpi/actions/bl-up.sh
