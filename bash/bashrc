@@ -79,6 +79,9 @@ alias "cs=xclip -selection clipboard"
 # use radian for R
 alias "R=radian"
 
+# use v for nvim
+alias "v=nvim"
+
 # set directory for R packages
 export R_LIBS_USER='/home/blair/R'
 
