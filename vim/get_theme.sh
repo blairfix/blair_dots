@@ -10,3 +10,6 @@ git clone https://github.com/flazz/vim-colorschemes.git
 # move themes to vim dir
 cd vim-colorschemes
 mv * ~/.vim
+
+cd ..
+sudo rm -r vim-colorschemes

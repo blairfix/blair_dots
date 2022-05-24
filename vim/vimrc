@@ -24,7 +24,6 @@ highlight LineNr ctermfg=grey ctermbg=black
 inoremap df  <ESC>:w<CR>	   
 nnoremap df  :w<CR>
 
-
 " plugin section
 call plug#begin('~/.vim/plugged')
 

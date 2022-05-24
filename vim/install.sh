@@ -1,6 +1,9 @@
 #!/bin/bash
 
 
+# get themes
+#./get_theme.sh
+
 # copy vimrc
 cp vimrc ~/.vimrc
 

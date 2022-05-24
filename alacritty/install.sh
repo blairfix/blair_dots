@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mkdir p ~/.config/alacritty/
+mkdir  ~/.config/alacritty/
 
 cp alacritty.yml ~/.config/alacritty/

@@ -5,4 +5,4 @@ cp rtorrent.rc ~/.rtorrent.rc
 
 # make rtorrent dot directory in home folder
 mkdir ~/.rtorrent
-
+mkdir ~/torrents
