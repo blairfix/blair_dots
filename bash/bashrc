@@ -88,7 +88,7 @@ export PATH=/home/blair/Dropbox/bin:$PATH
 export PATH=/home/blair/.local/bin:$PATH
 
 # set editor to vim
-EDITOR=/usr/bin/vim    
+EDITOR=/usr/bin/nvim    
 
 # colors
 eval $(env TERM=xterm256-color dircolors /home/blair/Dropbox/cloud_work/github/blair_dots/bash/dircolors.txt)
