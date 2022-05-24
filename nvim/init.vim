@@ -18,17 +18,24 @@ set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
 set number
 
-highlight LineNr ctermfg=grey ctermbg=black
 
 " remap df to esc and save file (if in insert mode), or save if in normal mode 
 inoremap df  <ESC>:w<CR>	   
 nnoremap df  :w<CR>
 
+" color scheme
+colorscheme vc
+
+" line number colors
+highlight LineNr ctermfg=grey ctermbg=black
 
 " plugin section
 call plug#begin('~/.vim/plugged')
 
 " plugin for nvim-R
 Plug 'jalvesaq/Nvim-R' 
+
+" goyo
+Plug 'junegunn/goyo.vim'
 
 call plug#end()

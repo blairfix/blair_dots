@@ -35,3 +35,6 @@ cd ..
 cd wordpress
 $run
 
+cd ..
+cd mastodon
+$run

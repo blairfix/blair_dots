@@ -1,0 +1,13 @@
+[Unit]
+Description= Scrape mastodon followers
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Projects/scrape_mastodon/download_followers.py
+
+[Install]
+WantedBy=default.target
+
+
+
+

@@ -1,0 +1,12 @@
+[Unit]
+Description= Daily scrape mastodon followers
+
+[Timer]
+OnCalendar=*-*-* 05:30:00
+RandomizedDelaySec=400
+AccuracySec=10min
+Persistent=true
+Unit=mastodon_scrape.service
+
+[Install]
+WantedBy=timers.target
