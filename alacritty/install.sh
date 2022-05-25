@@ -15,6 +15,6 @@ fi
 
 if [ $host == 'blair-laptop' ]
 then
-   sed -i 's/font-size-here/10/g' ~/.config/alacritty/alacritty.yml
+   sed -i 's/font-size-here/9/g' ~/.config/alacritty/alacritty.yml
 fi
 
