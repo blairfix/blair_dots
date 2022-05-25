@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # make dir
-mkdir ~/.ssh
+mkdir /etc/ssh
 
 # install config file
-cp sshd_config ~/.ssh/config
+sudo cp sshd_config /etc/ssh/
 
 # restart server
 sudo systemctl restart sshd
