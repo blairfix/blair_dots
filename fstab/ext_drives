@@ -1,2 +1,5 @@
-UUID=f8d56395-fc2e-4add-8bc0-af96159f068e   /home/blair/Multimedia     ext4    rw,auto,user,async     0       0
-UUID=a2352a98-821a-4ae4-8a10-a3228d356da5   /media/blair/Backup_drive  ext4    rw,auto,user,sync      0       2
+# multimedia
+UUID=f8d56395-fc2e-4add-8bc0-af96159f068e   /media/blair/multimedia    ext4    rw,auto,user,sync     0       0
+
+# backup drive
+UUID=a2352a98-821a-4ae4-8a10-a3228d356da5   /media/blair/Backup_drive  ext4    rw,auto,user,sync     0       2
