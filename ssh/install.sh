@@ -7,6 +7,5 @@ sudo mkdir /etc/ssh
 sudo cp sshd_config /etc/ssh/
 
 # restart server
-sudo service ssh restart
-#sudo service ssh status
-
+sudo systemctl restart sshd
+sudo systemctl status sshd
