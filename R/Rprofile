@@ -34,7 +34,7 @@ options(show.error.messages = TRUE)
 
 ## keep in sync with PrintDefaults() in  ../../main/print.c :
 options(scipen = 0)
-options(max.print = 99999)# max. #{entries} in internal printMatrix()
+options(max.print = 1000)# max. #{entries} in internal printMatrix()
 options(add.smooth = TRUE)# currently only used in 'plot.lm'
 if(!interactive() && is.null(getOption("showErrorCalls")))
     options(showErrorCalls = TRUE)

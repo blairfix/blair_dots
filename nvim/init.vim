@@ -33,7 +33,7 @@ highlight LineNr ctermfg=grey ctermbg=black
 call plug#begin('~/.vim/plugged')
 
 " plugin for nvim-R
-Plug 'jalvesaq/Nvim-R' 
+"Plug 'jalvesaq/Nvim-R' 
 
 " goyo
 Plug 'junegunn/goyo.vim'
