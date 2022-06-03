@@ -181,17 +181,14 @@ bar {
 # clean function
 bindsym $mod+p exec /home/blair/Dropbox/bin/clean.sh
 
-# floating window size max size
-#floating_maximum_size 600 x 1000
+# latex
+bindsym $mod+z exec /home/blair/Dropbox/bin/latex_run.sh
 
 # gtk theme
 exec --no-startup-id gnome-settings-daemon
 
 # redshift
 exec --no-startup-id redshift -O 4000K -r 
-
-# albert
-#exec --no-startup-id albert
 
 # set wallpaper
 exec --no-startup-id feh --bg-fill /home/blair/Dropbox/backgrounds/milky-way-g73224e2c3_1920.jpg

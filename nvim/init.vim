@@ -29,6 +29,7 @@ colorscheme vc
 " line number colors
 highlight LineNr ctermfg=grey ctermbg=black
 
+
 " plugin section
 call plug#begin('~/.vim/plugged')
 

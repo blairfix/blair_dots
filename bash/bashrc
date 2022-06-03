@@ -82,6 +82,9 @@ alias "R=radian"
 # use v for nvim
 alias "v=nvim"
 
+# settings for feh
+alias "feh=feh -R 1 --image-bg grey20 --scale-down --auto-zoom"
+
 # set directory for R packages
 export R_LIBS_USER='/home/blair/R'
 
