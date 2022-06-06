@@ -12,3 +12,4 @@ yay -S brother-hl2040
 lpinfo -v | grep -i 'Brother'
 
 
+cupsenable printer
