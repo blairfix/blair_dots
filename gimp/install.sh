@@ -6,7 +6,7 @@ v=${v%.*}
 
 # make scripts directory
 gimpdir=~/.config/GIMP/"$v"/scripts
-mkdir - p $gimpdir
+mkdir -p $gimpdir
 
 # copy scripts
 cp *.scm $gimpdir

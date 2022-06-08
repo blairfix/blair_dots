@@ -73,14 +73,14 @@ fi
 # fzf fuzzy finder
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
-# cat to clipboard
-alias "cs=xclip -selection clipboard"
-
 # use radian for R
 alias "R=radian"
 
 # use v for nvim
 alias "v=nvim"
+
+# use nvim for gvim
+alias "gvim=nvim -u /home/blair/Dropbox/cloud_work/github/blair_dots/nvim/gvim.vim"
 
 # settings for feh
 alias "feh=feh -R 1 --image-bg grey20 --scale-down --auto-zoom"
@@ -100,4 +100,16 @@ EDITOR=/usr/bin/nvim
 eval $(env TERM=xterm256-color dircolors /home/blair/Dropbox/cloud_work/github/blair_dots/bash/dircolors.txt)
 
 
+# firefox wayland
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    export MOZ_ENABLE_WAYLAND=1
+fi
+
+
+# copy to clipboard
+if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+    alias "cs=wl-copy"
+else
+    alias "cs=xclip -selection clipboard"
+fi
 

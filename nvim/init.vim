@@ -31,7 +31,8 @@ highlight LineNr ctermfg=grey ctermbg=black
 
 
 " plugin section
-call plug#begin('~/.vim/plugged')
+"call plug#begin('~/.vim/plugged')
+call plug#begin('~/.local/share/nvim/plugged')
 
 " plugin for nvim-R
 "Plug 'jalvesaq/Nvim-R' 

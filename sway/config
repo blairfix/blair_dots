@@ -176,8 +176,7 @@ exec --no-startup-id gnome-settings-daemon
 exec gammastep &
 
 # start firefox
-bindsym $mod+x exec firefox
-
+bindsym $mod+x exec MOZ_ENABLE_WAYLAND=1 firefox
 
 # Status Bar:
 #
