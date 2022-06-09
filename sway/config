@@ -1,6 +1,8 @@
+# sway configurations
+#----------------------------------------
 
-# Logo key. Use Mod1 for Alt.
-set $mod Mod4
+# mod key
+set $mod Mod1
 
 # Home row direction keys, like vim
 set $left h
@@ -11,14 +13,14 @@ set $right l
 # Your preferred terminal emulator
 set $term alacritty
 
-# Your preferred application launcher
-set $menu dmenu_path | dmenu | xargs swaymsg exec --
+# Application launcher
+for_window [app_id="^launcher$"] floating enable, sticky enable, resize set 30 ppt 60 ppt, border pixel 5 
+set $menu exec $term --class=launcher -e /usr/bin/sway-launcher-desktop
+bindsym shift+space exec $menu
+
 
 # wallpaper 
 output * bg /home/blair/Dropbox/backgrounds/milky-way-g73224e2c3_1920.jpg fill
-
-# mod key
-set $mod Mod1
 
 # font for window titles. 
 font pango:DejaVu Sans Mono 10
@@ -45,9 +47,6 @@ bindsym $mod+t exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
-
-# start dmenu (a program launcher)
-bindsym shift+space exec dmenu_run
 
 # change focus
 bindsym $mod+j focus left
@@ -100,16 +99,16 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # workspaces
-set $workspace1 "  1  "
-set $workspace2 "  2  "
-set $workspace3 "  3  "
-set $workspace4 "  4  "
-set $workspace5 "  5  "
-set $workspace6 "  6  "
-set $workspace7 "  7  "
-set $workspace8 "  8  "
-set $workspace9 "  9  "
-set $workspace10 "  10 "
+set $workspace1 1
+set $workspace2 2
+set $workspace3 3
+set $workspace4 4
+set $workspace5 5
+set $workspace6 6
+set $workspace7 7
+set $workspace8 8
+set $workspace9 9
+set $workspace10 10
 
 # switch workspace
 bindsym $mod+1 workspace $workspace1
@@ -168,35 +167,29 @@ bindsym $mod+p exec /home/blair/Dropbox/bin/clean.sh
 # latex
 bindsym $mod+z exec /home/blair/Dropbox/bin/latex_run.sh
 
-# gtk theme
-exec --no-startup-id gnome-settings-daemon
-
-
 # gammastep
 exec gammastep &
 
 # start firefox
 bindsym $mod+x exec MOZ_ENABLE_WAYLAND=1 firefox
 
+# disable xwayland
+#xwayland disable
+
 # Status Bar:
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
+
     position bottom
 
    # time
-    #status_command while date +'%B %d  %I:%M %p'; do sleep 1; done
-
-    status_command while /home/blair/Dropbox/bin/status.sh; do sleep 1; done
+    status_command while /home/blair/Dropbox/bin/status.sh; do sleep 20; done
 
     colors {
 
         statusline #ffffff
 	background #626262
-
-	#active_workspace   #ffffff #333333 #5c5c5c
-	#inactive_workspace #888888 #222222 #5c5c5c
-	#urgent_workspace   #ffffff #900000 #5c5c5c
 
     }
 

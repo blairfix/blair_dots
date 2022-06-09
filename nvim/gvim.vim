@@ -17,12 +17,15 @@ set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
 set linespace=4		    " linespace
 set display+=lastline	    " display last line of buffer
-set guicursor+=a:blinkon0   " turn off curser blinking
-set guioptions-=m	    " remove menu bar
-set guioptions-=T	    " remove toolbar
-set guioptions-=r	    " remove right scrollbar
 set nohlsearch		    " no search highlighting
 set spell		    " spell check
+
+" no status info
+set noshowmode
+set noruler
+set laststatus=0
+set noshowcmd
+
 
 " remap df to esc and save file (if in insert mode), 
 " or save if in normal mode 

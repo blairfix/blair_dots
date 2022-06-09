@@ -15,6 +15,12 @@ fi
 
 if [ $host == 'blair-laptop' ]
 then
-   sed -i 's/font-size-here/9/g' ~/.config/alacritty/alacritty.yml
+
+    if [ "$XDG_SESSION_TYPE" == "wayland" ]; then
+	sed -i 's/font-size-here/13/g' ~/.config/alacritty/alacritty.yml
+    else 
+	sed -i 's/font-size-here/9/g' ~/.config/alacritty/alacritty.yml
+    fi
+
 fi
 

@@ -79,9 +79,6 @@ alias "R=radian"
 # use v for nvim
 alias "v=nvim"
 
-# use nvim for gvim
-alias "gvim=nvim -u /home/blair/Dropbox/cloud_work/github/blair_dots/nvim/gvim.vim"
-
 # settings for feh
 alias "feh=feh -R 1 --image-bg grey20 --scale-down --auto-zoom"
 
