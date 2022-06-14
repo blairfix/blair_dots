@@ -78,16 +78,12 @@ encryption = allow_incoming,try_outgoing,enable_retry,prefer_plaintext
 view.sort = main
 
 # Sort the seeding view by the upload rate and only show torrents with peers
-view.sort_current = seeding,greater=d.get_up_rate=
-#view.filter = seeding,"and=d.get_complete=,d.get_peers_connected="
-view.sort_new = seeding,less=d.get_up_rate=
 view.sort = seeding
 
 # Sort the leeching view by name
 view.sort = leeching
 
 # Filter the active view by connected peers
-#view.filter = active,d.get_peers_connected=
 view.sort = active
 
 schedule = sort_main,11,5,view.sort=main
