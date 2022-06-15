@@ -27,15 +27,11 @@ nnoremap df  :w<CR>
 colorscheme vc
 
 " line number colors
-highlight LineNr ctermfg=grey ctermbg=black
+highlight LineNr ctermfg=darkgrey ctermbg=black
 
 
 " plugin section
-"call plug#begin('~/.vim/plugged')
 call plug#begin('~/.local/share/nvim/plugged')
-
-" plugin for nvim-R
-"Plug 'jalvesaq/Nvim-R' 
 
 " goyo
 Plug 'junegunn/goyo.vim'
