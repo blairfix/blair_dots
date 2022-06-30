@@ -4,8 +4,19 @@
 sudo systemctl enable cpupower.service
 sudo systemctl start cpupower.service
 
-# set governor
-sudo cpupower frquency-set -g powersave
+# backup old config file
+sudo cp /etc/default/cpupower /etc/default/cpupower.bak 
 
-# set max frequency
-sudo cpupower frequency-set -u 1.5 GHz
+
+#cpupower frequency-set -g powersave
+
+# install settings
+sudo cp cpupower /etc/default/cpupower
+
+# permissions
+cd /etc/default/
+sudo chown root cpupower
+sudo chgrp root cpupower
+
+# restart service
+sudo systemctl restart cpupower.service
