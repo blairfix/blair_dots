@@ -20,8 +20,8 @@ set number
 
 
 " remap df to esc and save file (if in insert mode), or save if in normal mode 
-inoremap df  <ESC>:w<CR>	   
-nnoremap df  :w<CR>
+inoremap fj  <ESC>:w<CR>	   
+nnoremap fj  :w<CR>
 
 " color scheme
 colorscheme vc

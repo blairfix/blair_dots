@@ -11,5 +11,4 @@ yay -S brother-hl2040
 # see if active 
 lpinfo -v | grep -i 'Brother'
 
-
-cupsenable printer
+cupsenable HL2040

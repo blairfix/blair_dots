@@ -180,7 +180,7 @@ bindsym $mod+x exec MOZ_ENABLE_WAYLAND=1 firefox
 bindsym $mod+g exec /home/blair/Dropbox/bin/gvim
 
 # disable xwayland
-xwayland disable
+#xwayland disable
 
 # Status Bar:
 #
