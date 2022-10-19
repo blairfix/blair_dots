@@ -12,10 +12,6 @@ cd dropsync
 $run
 
 cd ..
-cd email_list
-$run
-
-cd ..
 cd forbes
 $run
 
