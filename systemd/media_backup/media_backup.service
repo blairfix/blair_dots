@@ -3,7 +3,7 @@ Description= Backup media library
 
 [Service]
 Type=simple
-ExecStart=/home/blair/cronjobs/media_backup
+ExecStart=/home/blair/cronjobs/active/media_backup
 
 [Install]
 WantedBy=default.target

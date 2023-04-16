@@ -3,7 +3,7 @@ Description= Daily backup to dropbox using rclone
 
 [Service]
 Type=simple
-ExecStart=/home/blair/cronjobs/rclone
+ExecStart=/home/blair/cronjobs/active/rclone
 
 [Install]
 WantedBy=default.target

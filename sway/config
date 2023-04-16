@@ -175,6 +175,7 @@ exec gammastep &
 
 # start firefox
 bindsym $mod+x exec MOZ_ENABLE_WAYLAND=1 firefox
+bindsym $mod+shift+x exec MOZ_ENABLE_WAYLAND=1 firefox -P "blog"
 
 # gvim
 bindsym $mod+g exec /home/blair/Dropbox/bin/gvim

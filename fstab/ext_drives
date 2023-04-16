@@ -3,3 +3,7 @@ UUID=f8d56395-fc2e-4add-8bc0-af96159f068e   /media/blair/multimedia    ext4    r
 
 # backup drive
 UUID=a2352a98-821a-4ae4-8a10-a3228d356da5   /media/blair/Backup_drive  ext4    rw,auto,user     0       2
+
+# fix archives
+UUID=5C46-6236 /media/blair/fix_archives    exfat	rw,auto,user     0       2
+

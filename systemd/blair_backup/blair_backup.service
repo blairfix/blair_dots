@@ -3,7 +3,7 @@ Description= Backup Blair's files
 
 [Service]
 Type=simple
-ExecStart=/home/blair/cronjobs/blair_backup
+ExecStart=/home/blair/cronjobs/active/blair_backup
 
 [Install]
 WantedBy=default.target

@@ -3,7 +3,7 @@ Description= restart jellyfin server
 
 [Service]
 Type=simple
-ExecStart=/home/blair/cronjobs/jellyfin_restart
+ExecStart=/home/blair/cronjobs/active/jellyfin_restart
 
 [Install]
 WantedBy=default.target
