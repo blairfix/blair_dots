@@ -168,4 +168,6 @@ local({
 # library path
 .libPaths('/home/blair/R')
 
+# set browser
+options(browser = 'firefox')
 
