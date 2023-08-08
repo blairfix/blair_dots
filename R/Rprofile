@@ -132,9 +132,9 @@ options(papersize = papersize,
         printcmd = Sys.getenv("R_PRINTCMD"),
         dvipscmd = Sys.getenv("DVIPS", "dvips"),
         texi2dvi = Sys.getenv("R_TEXI2DVICMD"),
-        browser = Sys.getenv("R_BROWSER"),
+        browser = Sys.getenv("firefox"),
         pager = file.path(R.home(), "bin", "pager"),
-        pdfviewer = Sys.getenv("R_PDFVIEWER"),
+        pdfviewer = Sys.getenv("okular"),
         useFancyQuotes = TRUE)
 })
 

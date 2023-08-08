@@ -3,7 +3,7 @@ Description= Scrape twitter followers
 
 [Service]
 Type=simple
-ExecStart=/home/blair/Projects/scrape_twitter/download_followers_5.py
+ExecStart=/home/blair/Projects/scrape_twitter/download_followers_6.py
 
 [Install]
 WantedBy=default.target
