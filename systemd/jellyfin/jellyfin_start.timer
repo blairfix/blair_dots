@@ -1,0 +1,9 @@
+[Unit]
+Description=start jellyfin on boot
+
+[Timer]
+OnBootSec=1 m 
+Unit=jellyfin_start.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,13 @@
+[Unit]
+Description=index photoprism
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/active/photoprism_index
+
+[Install]
+WantedBy=default.target
+
+
+
+

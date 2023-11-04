@@ -1,0 +1,11 @@
+[Unit]
+Description=index photoprism
+
+[Timer]
+OnCalendar=*-*-* 06,10,12,16,20:00:00
+RandomizedDelaySec=100
+Persistent=true
+Unit=pp_index.service
+
+[Install]
+WantedBy=timers.target

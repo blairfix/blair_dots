@@ -1,0 +1,13 @@
+[Unit]
+Description=convert videos to avc, then backup database
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/active/photoprism_convert_backup
+
+[Install]
+WantedBy=default.target
+
+
+
+

@@ -1,0 +1,13 @@
+[Unit]
+Description=start jellyfin on startup
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/active/jellyfin_start
+
+[Install]
+WantedBy=default.target
+
+
+
+

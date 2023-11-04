@@ -1,0 +1,11 @@
+[Unit]
+Description=convert videos into avc, then backup database
+
+[Timer]
+OnCalendar=*-*-* 03:23:00
+RandomizedDelaySec=100
+Persistent=true
+Unit=pp_convert.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,9 @@
+[Unit]
+Description=start pihole on boot
+
+[Timer]
+OnBootSec=1 m 
+Unit=pihole_start.service
+
+[Install]
+WantedBy=timers.target

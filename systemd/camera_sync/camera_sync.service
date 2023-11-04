@@ -1,0 +1,9 @@
+[Unit]
+Description=Sync camera photos to media archive
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/active/camera_sync
+
+[Install]
+WantedBy=default.target

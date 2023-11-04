@@ -1,0 +1,11 @@
+[Unit]
+Description=Sync camera photos to media archive
+
+[Timer]
+OnCalendar=*-*-* *:00:00
+RandomizedDelaySec=60
+Persistent=true
+Unit=camera_sync.service
+
+[Install]
+WantedBy=timers.target

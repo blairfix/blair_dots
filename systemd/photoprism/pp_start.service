@@ -1,0 +1,13 @@
+[Unit]
+Description=start photoprism on startup
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/active/photoprism_start
+
+[Install]
+WantedBy=default.target
+
+
+
+

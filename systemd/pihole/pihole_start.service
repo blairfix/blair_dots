@@ -1,0 +1,13 @@
+[Unit]
+Description=start pihole on startup
+
+[Service]
+Type=simple
+ExecStart=/home/blair/cronjobs/active/pihole_start
+
+[Install]
+WantedBy=default.target
+
+
+
+
