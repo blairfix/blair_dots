@@ -7,5 +7,5 @@ cp bashrc ~/
 mv ~/bashrc ~/.bashrc
 
 # source bash file
-#exec bash
+exec bash
 

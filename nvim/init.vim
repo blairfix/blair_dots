@@ -18,6 +18,12 @@ set wildmenu		    " autocomplete
 set wildmode=list:longest   " more autocomplete
 set number
 
+filetype plugin indent on
+syntax enable
+set nosmartindent
+set cindent
+set cinkeys-=0#
+set indentkeys-=0#
 
 " remap df to esc and save file (if in insert mode), or save if in normal mode 
 inoremap fj  <ESC>:w<CR>	   

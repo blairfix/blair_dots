@@ -5,7 +5,7 @@ UUID=8464b322-db67-40e7-b45b-ba1498a6236f	/         	ext4      	rw,relatime	0 1
 UUID=398a048f-fad8-4a2d-a143-2a9220c26ea0	/home     	ext4      	rw,relatime	0 2
 
 # swap
-/swapfile none swap sw 0 0
+#/swapfile none swap sw 0 0
 
 # multimedia
 UUID=f8d56395-fc2e-4add-8bc0-af96159f068e   /media/blair/multimedia    ext4    rw,auto,user    0       0
