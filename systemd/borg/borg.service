@@ -1,0 +1,9 @@
+[Unit]
+Description=borg backup
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Projects/borg/backup.sh
+
+[Install]
+WantedBy=default.target
