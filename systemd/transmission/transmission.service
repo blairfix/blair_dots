@@ -1,0 +1,13 @@
+[Unit]
+Description=start transmission daemon
+
+[Service]
+Type=simple
+ExecStart=transmission-daemon
+
+[Install]
+WantedBy=default.target
+
+
+
+
