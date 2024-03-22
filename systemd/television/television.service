@@ -1,0 +1,13 @@
+[Unit]
+Description=cp new tv files
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Projects/television/runall.sh
+
+[Install]
+WantedBy=default.target
+
+
+
+
