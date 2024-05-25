@@ -32,19 +32,15 @@ set noshowcmd
 inoremap fj  <ESC>:w<CR>	   
 nnoremap fj  :w<CR>	   
 
-colorscheme xcode-default
+colorscheme lightning
 
 
 " plugin section
 call plug#begin('~/.local/share/nvim/plugged')
 
 Plug 'junegunn/goyo.vim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'rudism/telescope-dict.nvim'
+Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
 
-" map thesaurus
-nnoremap <leader>t <cmd>lua require('telescope').extensions.dict.synonyms()<cr>
 

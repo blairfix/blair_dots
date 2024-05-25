@@ -1,8 +1,8 @@
 [Unit]
-Description=Copy tv files
+Description=run flexget and mv finished files
 
 [Timer]
-OnCalendar=*:0,20,40
+OnCalendar=*:0,15,30,45
 Persistent=true
 Unit=television.service
 

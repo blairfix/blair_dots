@@ -1,12 +1,11 @@
 [Unit]
-Description= hourly borg backup 
+Description=hourly borg backup 
 
 [Timer]
-OnCalendar=*-*-*  *:05:00
+OnCalendar=00/6:20
 RandomizedDelaySec=60
 Persistent=true
-Unit=borg.service
-
+Unit=borg_media.service
 
 [Install]
 WantedBy=timers.target

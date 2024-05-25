@@ -1,0 +1,13 @@
+[Unit]
+Description= download smartfind
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Projects/smart_find/login.py
+
+[Install]
+WantedBy=default.target
+
+
+
+

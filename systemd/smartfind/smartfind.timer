@@ -1,0 +1,11 @@
+[Unit]
+Description= smartfind loginsmartfind loginsmartfind loginsmartfind login
+
+[Timer]
+OnCalendar=*-*-* 05:00:00
+OnCalendar=*:0,10,20,30,40,50
+Persistent=true
+Unit=smartfind.service
+
+[Install]
+WantedBy=timers.target

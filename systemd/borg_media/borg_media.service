@@ -1,0 +1,9 @@
+[Unit]
+Description=borg media backup
+
+[Service]
+Type=simple
+ExecStart=/home/blair/Projects/borg/media/backup.sh
+
+[Install]
+WantedBy=default.target

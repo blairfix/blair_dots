@@ -2,7 +2,7 @@
 Description=start transmission
 
 [Timer]
-OnBootSec=1 m 
+OnBootSec=5min 
 Unit=transmission.service
 
 [Install]

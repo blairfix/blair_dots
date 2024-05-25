@@ -3,7 +3,7 @@ Description=borg backup
 
 [Service]
 Type=simple
-ExecStart=/home/blair/Projects/borg/backup.sh
+ExecStart=/home/blair/Projects/borg/blair/backup.sh
 
 [Install]
 WantedBy=default.target

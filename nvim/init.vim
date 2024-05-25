@@ -29,17 +29,29 @@ set indentkeys-=0#
 inoremap fj  <ESC>:w<CR>	   
 nnoremap fj  :w<CR>
 
-" color scheme
-colorscheme vc
-
-" line number colors
-highlight LineNr ctermfg=darkgrey ctermbg=black
-
 
 " plugin section
 call plug#begin('~/.local/share/nvim/plugged')
 
 " goyo
 Plug 'junegunn/goyo.vim'
+Plug 'rafi/awesome-vim-colorschemes'
 
 call plug#end()
+
+
+" color scheme
+colorscheme minimalist
+
+highlight Normal guibg=none
+highlight NonText guibg=none
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+
+" highlight
+highlight LineNr    gui=NONE	guifg=#707070	guibg=NONE
+
+" comments
+highlight Comment  guifg=#6D8AA8 gui=NONE
+
+
